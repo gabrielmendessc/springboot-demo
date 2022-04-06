@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a1e3a7d-bfe9-4f40-94f4-b9ef418cb885" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabrielmendes/course/config/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gabrielmendes/course/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gabrielmendes/course/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabrielmendes/course/entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1649259571273</updated>
       <workItem from="1649259574141" duration="2821000" />
+      <workItem from="1649263389912" duration="52000" />
+      <workItem from="1649285251357" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="Git Ignore">
       <created>1649261061274</created>
@@ -111,18 +111,19 @@
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
     <state x="1713" y="2" width="1092" height="852" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649260145162" />
-    <state x="1971" y="145" key="#com.intellij.ide.util.MemberChooser" timestamp="1649261211033">
-      <screen x="1366" y="2" width="1600" height="852" />
+    <state x="517" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1649285750811">
+      <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="1971" y="145" key="#com.intellij.ide.util.MemberChooser/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649261211033" />
+    <state x="517" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1366.720@0.0.1366.720" timestamp="1649285750811" />
     <state x="1502" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1649260132183">
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
     <state x="1502" y="251" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649260132183" />
-    <state x="1757" y="23" key="CommitChangelistDialog2" timestamp="1649261627347">
+    <state x="1757" y="23" key="CommitChangelistDialog2" timestamp="1649262509784">
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
-    <state x="1757" y="23" key="CommitChangelistDialog2/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649261627347" />
+    <state x="1757" y="23" key="CommitChangelistDialog2/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649262509784" />
     <state x="1893" y="172" key="FileChooserDialogImpl" timestamp="1649259622376">
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
@@ -159,14 +160,15 @@
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
     <state width="1557" height="212" key="GridCell.Tab.1.right/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649262423460" />
-    <state x="1667" y="5" key="SettingsEditor" timestamp="1649260548926">
-      <screen x="1366" y="2" width="1600" height="852" />
+    <state x="257" y="3" key="SettingsEditor" timestamp="1649285429981">
+      <screen x="0" y="0" width="1366" height="720" />
     </state>
     <state x="1667" y="5" key="SettingsEditor/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649260548926" />
-    <state x="1758" y="150" key="Vcs.Push.Dialog.v2" timestamp="1649261629578">
+    <state x="257" y="3" key="SettingsEditor/0.0.1366.720@0.0.1366.720" timestamp="1649285429981" />
+    <state x="1758" y="150" key="Vcs.Push.Dialog.v2" timestamp="1649262517575">
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
-    <state x="1758" y="150" key="Vcs.Push.Dialog.v2/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649261629578" />
+    <state x="1758" y="150" key="Vcs.Push.Dialog.v2/0.0.1366.720/1366.2.1600.852@1366.2.1600.852" timestamp="1649262517575" />
     <state x="1548" y="131" key="new project wizard" timestamp="1649259786927">
       <screen x="1366" y="2" width="1600" height="852" />
     </state>
