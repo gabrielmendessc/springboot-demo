@@ -1,5 +1,7 @@
 package com.gabrielmendes.course.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.HashSet;
@@ -29,6 +32,9 @@ public class Product implements Serializable {
                joinColumns = @JoinColumn(name = "product_id"),
                inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories = new HashSet<>();
+
+    @OneToMany(mappedBy = "id.order")
+    private Set<OrderItem> items = new HashSet<>();
 
     public Product(){}
 
@@ -82,6 +88,16 @@ public class Product implements Serializable {
 
     public Set<Category> getCategories() {
         return categories;
+    }
+
+    @JsonIgnore
+    public Set<Order> getOrders(){
+        Set<Order> orders = new HashSet<>();
+        for(OrderItem item : items){
+            orders.add(item.getOrder());
+        }
+
+        return orders;
     }
 
     @Override
